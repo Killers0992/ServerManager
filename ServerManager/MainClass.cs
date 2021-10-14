@@ -20,7 +20,7 @@ namespace ServerManager
         public override string Name { get; } = "ServerManager";
         public override string Prefix { get; } = "servermanager";
         public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
-        public override Version Version { get; } = new Version(1, 0, 1);
+        public override Version Version { get; } = new Version(1, 0, 2);
 
         public CoroutineHandle StatusUpdater;
 
