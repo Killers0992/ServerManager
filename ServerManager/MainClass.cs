@@ -120,6 +120,7 @@ namespace ServerManager
         {
             using (HttpClient client = new HttpClient())
             {
+                model.Token = MainClass.singleton.Config.ApiKey;
                 var httpContent = new StringContent(Encoding.UTF8.GetString(Utf8Json.JsonSerializer.Serialize(model, Utf8JsonConfiguration.Resolver)), Encoding.UTF8, "application/json");
 
                 var webRequest = await client.PostAsync($"{endpoint}/servermanager/updateserver", httpContent);

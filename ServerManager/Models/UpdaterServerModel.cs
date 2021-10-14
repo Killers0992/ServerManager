@@ -10,6 +10,7 @@ namespace ServerManager.Models
 {
     public class UpdateServerModel
     {
+        public string Token { get; set; }
         public int ServerPort => Server.Port;
         public ServerState? State { get; set; }
         public int? OnlinePlayers { get; set; }

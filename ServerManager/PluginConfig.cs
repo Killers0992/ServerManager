@@ -11,6 +11,7 @@ namespace ServerManager
     {
         public bool IsEnabled { get; set; } = true;
         public bool Debug { get; set; } = false;
+        public string ApiKey { get; set; } = "INVALID";
         public string ApiEndpoint { get; set; } = "https://exiledplugins.kingsplayground.fun/api";
     }
 }
